@@ -31,6 +31,7 @@ public class HelloControllerTest {
 	@MockBean
 	private NameService nameService;
 	
+	// org.junit.jupiter.api.Test for Junit 5
 	@Test
 	public void shouldSayHello() throws Exception {
 		when(nameService.getName()).thenReturn("Charrada");
