@@ -31,7 +31,7 @@ public class CityControllerRestTemplateTest {
 		restTemplate.postForLocation(url, City.builder().name("Monastir").build());
 		restTemplate.postForLocation(url, City.builder().name("Riyadh").build());
 
-		String urlGet = String.format("http://localhost:%d//listCities", port);
+		String urlGet = String.format("http://localhost:%d/listCities", port);
 		Cities cities = restTemplate.getForEntity(urlGet, Cities.class).getBody();
 
 		assertThat(cities.getListCity())
