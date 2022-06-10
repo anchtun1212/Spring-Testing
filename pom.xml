@@ -50,7 +50,6 @@
 			<scope>runtime</scope>
 		</dependency>
 		
-		
 		<!-- Spring data JPA -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

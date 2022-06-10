@@ -26,6 +26,7 @@ public class CityControllerSmallSpringBootTest {
 	@Autowired
 	private CityController cityController;
 
+	// should be mocked because we add this: @SpringBootTest(classes = CityController.class)
 	@MockBean
 	private CityService cityService;
 
